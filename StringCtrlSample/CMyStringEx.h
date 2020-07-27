@@ -8,5 +8,7 @@ public:
 	~CMyStringEx();
 
 	int Find(const char* pszParam);
+
+	void OnSetString(char * pszData, int nLength);
 };
 

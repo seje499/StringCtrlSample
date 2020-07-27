@@ -5,13 +5,15 @@
 int main()
 {
 	CMyStringEx strTest;
-	strTest.SetString("I am a boy");
+	strTest.SetString("멍멍이아들");
 	cout << strTest << endl;
 
-	int nIndex = strTest.Find("am");
-	cout << "Index: " << nIndex << endl;
-
 	return 0;
+
+	//int nIndex = strTest.Find("am");
+	//cout << "Index: " << nIndex << endl;
+
+	//return 0;
 
 
 
