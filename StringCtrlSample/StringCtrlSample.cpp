@@ -5,6 +5,20 @@
 int main()
 {
 	CMyStringEx strTest;
+
+	strTest.SetString("멍멍이아들");
+	cout << strTest << endl;
+
+	strTest.SetString("Hello");
+	cout << strTest << endl;
+
+	return 0;
+
+
+
+
+/*
+	CMyStringEx strTest;
 	strTest.SetString("I am a boy");
 	cout << strTest << endl;
 
@@ -12,7 +26,7 @@ int main()
 	cout << "Index: " << nIndex << endl;
 
 	return 0;
-
+*/
 
 
 	//CMyString strData, strTest;
