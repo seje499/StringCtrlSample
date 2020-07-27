@@ -4,17 +4,22 @@
 
 int main()
 {
-	CMyStringEx strTest;
-
-	strTest.SetString("멍멍이아들");
-	cout << strTest << endl;
-
-	strTest.SetString("Hello");
-	cout << strTest << endl;
+	CMyStringEx strLeft("Hello"), strRight("World");
+	cout << strLeft + strRight << endl;
 
 	return 0;
 
 
+
+	//CMyStringEx strTest;
+
+	//strTest.SetString("멍멍이아들");
+	//cout << strTest << endl;
+
+	//strTest.SetString("Hello");
+	//cout << strTest << endl;
+
+	//return 0;
 
 
 /*
