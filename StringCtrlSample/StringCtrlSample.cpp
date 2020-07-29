@@ -4,11 +4,18 @@
 
 int main()
 {
-	CMyStringEx strTest;
-	strTest.SetString("멍멍이아들");
-	cout << strTest << endl;
+	CMyString b("World"), c;
+	c = "hello" + b;
+	cout << c << endl;
 
 	return 0;
+
+
+	//CMyStringEx strTest;
+	//strTest.SetString("멍멍이아들");
+	//cout << strTest << endl;
+
+	//return 0;
 
 	//int nIndex = strTest.Find("am");
 	//cout << "Index: " << nIndex << endl;

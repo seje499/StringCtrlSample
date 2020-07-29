@@ -29,6 +29,7 @@ CMyString::CMyString(CMyString &&rhs) : m_pszData(nullptr), m_nLength(0)
 {
 	m_pszData = rhs.m_pszData;
 	m_nLength = rhs.m_nLength;
+	cout << "이동 생성자 호출" << endl;
 
 	rhs.m_pszData = nullptr;
 	rhs.m_nLength = 0;
@@ -164,4 +165,13 @@ int CMyString::operator!=(const CMyString & rhs)
 void CMyString::OnSetString(char * pszData, int nLength)
 {
 
+}
+
+
+CMyString operator+(const char* pszParam, const CMyString &strParam)
+{
+	CMyString strResult(pszParam);
+	strResult.Append(strParam.m_pszData);
+
+	return strResult;
 }

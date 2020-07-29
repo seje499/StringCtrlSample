@@ -18,7 +18,7 @@ public:
 	const char* GetString() const;
 	void Release();
 	CMyString& operator=(const CMyString &rhs);
-	
+
 	operator char*(void) const;
 
 	int GetLength() const;
@@ -28,7 +28,7 @@ public:
 	CMyString operator+(const CMyString &rhs);
 	CMyString& operator+=(const CMyString &rhs);
 
-	
+
 	char& operator[](int rhs);
 
 	char operator[](int& rhs) const;
@@ -39,5 +39,6 @@ public:
 
 	virtual void OnSetString(char * pszData, int nLength);
 
+	friend CMyString operator+(const char *pszParam, const CMyString &strParam);
 };
 
